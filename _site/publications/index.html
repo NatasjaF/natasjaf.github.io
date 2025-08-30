@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ title or "Your Name — Research" }}</title>
+  <title>Publications — Your Name</title>
   <link rel="stylesheet" href="/styles.css">
-  <meta name="description" content="{{ description or 'Research website' }}">
+  <meta name="description" content="Research website">
 </head>
 <body>
   <header class="container">
@@ -14,14 +14,14 @@
       <a href="/">Home</a>
       <a href="/publications/">Publications</a>
       <a href="/cv.pdf">CV</a>
-      <a href="https://scholar.google.com/citations?user=hkeNPW8AAAAJ&hl=en/" target="_blank" rel="noreferrer">Google Scholar</a>
+      <a href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar</a>
     </nav>
   </header>
   <main class="container">
-    {% block content %}{% endblock %}
+    
   </main>
   <footer class="container small">
-    © {{ "now" | date("yyyy") }} Your Name
+    © 2025 Your Name
   </footer>
 </body>
 </html>
