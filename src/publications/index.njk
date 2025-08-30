@@ -1,3 +1,4 @@
+cat > src/publications/index.njk <<'NJK'
 ---
 title: "Publications"
 layout: "base.njk"
@@ -6,19 +7,24 @@ permalink: "/publications/index.html"
 
 <h1>Publications</h1>
 
-{% set pubsByYear = publications | groupby("year") | reverse %}
-{% for group in pubsByYear %}
-  <h2>{{ group.grouper }}</h2>
-  <ul class="publist">
-  {% for p in group.list %}
-    <li>
-      {{ p.authors }} ({{ p.year }}).
-      <strong>{{ p.title }}</strong>. <em>{{ p.venue }}</em>
-      {% if p.doi_url %} · <a href="{{ p.doi_url }}" target="_blank" rel="noreferrer">DOI</a>{% endif %}
-      {% if p.preprint %} · <a href="{{ p.preprint }}" target="_blank" rel="noreferrer">Preprint</a>{% endif %}
-      {% if p.pdf %} · <a href="{{ p.pdf }}">PDF</a>{% endif %}
-      {% if p.code %} · <a href="{{ p.code }}" target="_blank" rel="noreferrer">Code</a>{% endif %}
-    </li>
+{% set groups = publications | groupby("year") | reverse %}
+{% if groups and groups.length %}
+  {% for group in groups %}
+    <h2>{{ group.grouper }}</h2>
+    <ul class="publist">
+      {% for p in group.items %}
+        <li>
+          {{ p.authors }} ({{ p.year }}).
+          <strong>{{ p.title }}</strong>. <em>{{ p.venue }}</em>
+          {% if p.doi_url %} · <a href="{{ p.doi_url }}" target="_blank" rel="noreferrer">DOI</a>{% endif %}
+          {% if p.preprint %} · <a href="{{ p.preprint }}" target="_blank" rel="noreferrer">Preprint</a>{% endif %}
+          {% if p.pdf %} · <a href="{{ p.pdf }}">PDF</a>{% endif %}
+          {% if p.code %} · <a href="{{ p.code }}" target="_blank" rel="noreferrer">Code</a>{% endif %}
+        </li>
+      {% endfor %}
+    </ul>
   {% endfor %}
-  </ul>
-{% endfor %}
+{% else %}
+  <p>No publications found. Add items to <code>src/_data/publications.json</code>.</p>
+{% endif %}
+NJK
