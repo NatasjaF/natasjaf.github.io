@@ -1,0 +1,19 @@
+:root { --maxw: 900px; --gap: 1rem; --border: #e5e7eb; }
+* { box-sizing: border-box; }
+body { font: 16px/1.6 system-ui, Arial, sans-serif; margin: 0; color: #111; }
+a { text-decoration: none; } a:hover { text-decoration: underline; }
+.container { max-width: var(--maxw); margin: 0 auto; padding: 1.25rem; }
+.small { color: #666; }
+header { display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+header nav a { margin-right: .75rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: var(--gap); }
+.card { border: 1px solid var(--border); border-radius: 12px; overflow: hidden; background: #fff; }
+.card-img { display: block; width: 100%; height: auto; }
+.card-body { padding: 1rem; }
+.card-title { margin: 0 0 .25rem 0; font-size: 1.1rem; }
+.card-meta { margin: 0 0 .5rem 0; color: #666; }
+.btn { display: inline-block; padding: .4rem .7rem; border: 1px solid var(--border); border-radius: 10px; }
+.pubs { padding-left: 1.25rem; }
+.pub { margin-bottom: .9rem; }
+.pub-title { font-weight: 600; }
+.links a { margin-right: .5rem; }

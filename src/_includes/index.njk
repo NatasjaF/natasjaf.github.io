@@ -1,0 +1,23 @@
+---
+title: "Your Name — Research"
+layout: "base.njk"
+description: "Personal research site"
+---
+{% block content %}
+  <div class="grid">
+    {% include "components/card.njk" with {
+      title: "About",
+      content: "<p>I’m a researcher focusing on X. Interests: A, B, C.</p>"
+    } %}
+    {% include "components/card.njk" with {
+      title: "News",
+      content: "<ul><li>[Aug 2025] Paper accepted at …</li><li>Talk at …</li></ul>"
+    } %}
+    {% include "components/card.njk" with {
+      title: "Contact",
+      content: "<p>you@university.edu<br>Dept/Institute<br>City, Country</p>",
+      cta_href: "mailto:you@university.edu",
+      cta_label: "Email me"
+    } %}
+  </div>
+{% endblock %}

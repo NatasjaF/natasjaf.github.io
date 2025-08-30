@@ -1,0 +1,11 @@
+<div class="card">
+  {% if image %}<img src="{{ image }}" alt="{{ title }}" class="card-img">{% endif %}
+  <div class="card-body">
+    {% if title %}<h3 class="card-title">{{ title }}</h3>{% endif %}
+    {% if meta %}<p class="card-meta">{{ meta }}</p>{% endif %}
+    {% if content %}<div class="card-text">{{ content | safe }}</div>{% endif %}
+    {% if cta_href and cta_label %}
+      <p><a class="btn" href="{{ cta_href }}">{{ cta_label }}</a></p>
+    {% endif %}
+  </div>
+</div>

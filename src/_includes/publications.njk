@@ -1,0 +1,24 @@
+---
+title: "Publications — Your Name"
+layout: "base.njk"
+permalink: "/publications/index.html"
+---
+{% block content %}
+  <h2>Publications</h2>
+  <ol class="pubs">
+  {% for p in publications %}
+    <li class="pub">
+      <div class="pub-title">{{ p.title }}</div>
+      <div class="pub-meta">{{ p.authors }} — <em>{{ p.venue }}</em></div>
+      {% if p.abstract %}<details><summary>Abstract</summary><p>{{ p.abstract }}</p></details>{% endif %}
+      {% if p.links and p.links.length %}
+        <p class="links">
+          {% for l in p.links %}
+            <a href="{{ l.url }}">{{ l.label }}</a>{% if not loop.last %} · {% endif %}
+          {% endfor %}
+        </p>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ol>
+{% endblock %}

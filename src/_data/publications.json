@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Paper Title 1",
+    "authors": "You, A. Collaborator",
+    "venue": "Journal/Conference, 2024",
+    "links": [
+      {"label": "PDF", "url": "https://doi.org/10.xxxx/xxxx"},
+      {"label": "Code", "url": "https://github.com/yourusername/repo"}
+    ],
+    "abstract": "One–two sentence summary."
+  }
+]

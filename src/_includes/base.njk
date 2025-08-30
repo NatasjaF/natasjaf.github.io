@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title or "Your Name — Research" }}</title>
+  <link rel="stylesheet" href="/styles.css">
+  <meta name="description" content="{{ description or 'Research website' }}">
+</head>
+<body>
+  <header class="container">
+    <h1><a href="/">Your Name</a></h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/publications/">Publications</a>
+      <a href="/cv.pdf">CV</a>
+      <a href="https://scholar.google.com/" target="_blank" rel="noreferrer">Google Scholar</a>
+    </nav>
+  </header>
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+  <footer class="container small">
+    © {{ "now" | date("yyyy") }} Your Name
+  </footer>
+</body>
+</html>
