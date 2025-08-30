@@ -1,12 +1,92 @@
 [
   {
-    "title": "Paper Title 1",
-    "authors": "You, A. Collaborator",
-    "venue": "Journal/Conference, 2024",
-    "links": [
-      {"label": "PDF", "url": "https://doi.org/10.xxxx/xxxx"},
-      {"label": "Code", "url": "https://github.com/yourusername/repo"}
-    ],
-    "abstract": "One–two sentence summary."
+    "year": 2025,
+    "title": "Open Science Practices in Integrated Assessment Models",
+    "authors": "Rodés-Bachs, C.; Sampedro, J.; Frilingou, N.; Gardumi, F.; Lo Giudice, C.",
+    "venue": "Open Research Europe",
+    "type": "Journal Article",
+    "doi": "10.12688/openreseurope.18824.2",
+    "doi_url": "https://doi.org/10.12688/openreseurope.18824.2",
+    "url": "https://open-research-europe.ec.europa.eu/articles/5-12"
+  },
+  {
+    "year": 2024,
+    "title": "Science must up its game to support climate finance negotiations",
+    "authors": "Nikas, A.; Frilingou, N.; Al Khourdajie, A.; Gambhir, A.",
+    "venue": "Nature (Correspondence)",
+    "type": "Correspondence",
+    "doi": "10.1038/d41586-024-03945-7",
+    "doi_url": "https://doi.org/10.1038/d41586-024-03945-7",
+    "url": "https://www.nature.com/articles/d41586-024-03945-7"
+  },
+  {
+    "year": 2024,
+    "title": "Energy system analysis of cutting off Russian gas supply to the European Union",
+    "authors": "Sampedro, J.; van de Ven, D.-J.; Horowitz, R.; Yarlagadda, B.; Frilingou, N.; et al.",
+    "venue": "Energy Strategy Reviews",
+    "type": "Journal Article",
+    "doi": "10.1016/j.esr.2024.101450",
+    "doi_url": "https://doi.org/10.1016/j.esr.2024.101450",
+    "url": "https://www.osti.gov/pages/biblio/2475163"
+  },
+  {
+    "year": 2024,
+    "title": "Three different directions in which the European Union could replace Russian natural gas",
+    "authors": "Nikas, A.; Frilingou, N.; Heussaff, C.; van de Ven, D.-J.; et al.",
+    "venue": "Energy",
+    "type": "Journal Article",
+    "doi": "",
+    "doi_url": "",
+    "url": "https://www.sciencedirect.com/science/article/pii/S0360544224000252"
+  },
+  {
+    "year": 2024,
+    "title": "Is it feasible to implement minimum energy performance standards (MEPS) for existing buildings in Greece? A cost-benefit evaluation",
+    "authors": "Frilingou, N.; Koasidis, K.; Spyridaki, N.-A.; Nikas, A.; Doukas, H.; et al.",
+    "venue": "Energy Policy",
+    "type": "Journal Article",
+    "doi": "10.1016/j.enpol.2024.114112",
+    "doi_url": "https://doi.org/10.1016/j.enpol.2024.114112",
+    "url": "https://www.researchgate.net/publication/380254556_Is_it_feasible_to_implement_minimum_energy_performance_standards_MEPS_for_existing_buildings_in_Greece_A_cost-benefit_evaluation"
+  },
+  {
+    "year": 2023,
+    "title": "Navigating through an energy crisis: Challenges and progress towards electricity decarbonisation, reliability, and affordability in Italy",
+    "authors": "Frilingou, N.; Xexakis, G.; Koasidis, K.; Nikas, A.; Doukas, H.",
+    "venue": "Energy Strategy Reviews",
+    "type": "Journal Article",
+    "doi": "",
+    "doi_url": "",
+    "url": "https://www.sciencedirect.com/science/article/abs/pii/S2214629622004376"
+  },
+  {
+    "year": 2023,
+    "title": "In-Cognitive: A web-based Python application for fuzzy cognitive map design, simulation, and uncertainty analysis based on the Monte Carlo method",
+    "authors": "Koutsellis, T.; Xexakis, G.; Koasidis, K.; Frilingou, N.; Karamaneas, A.; Nikas, A.; Doukas, H.",
+    "venue": "SoftwareX",
+    "type": "Journal Article",
+    "doi": "10.1016/j.softx.2023.101513",
+    "doi_url": "https://doi.org/10.1016/j.softx.2023.101513",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2352711023002091"
+  },
+  {
+    "year": 2023,
+    "title": "A stakeholder-informed modelling study of Greece’s energy transition amidst an energy crisis: The role of natural gas and climate ambition",
+    "authors": "Karamaneas, A.; Koasidis, K.; Frilingou, N.; Xexakis, G.; Nikas, A.; Doukas, H.",
+    "venue": "Renewable and Sustainable Energy Transition",
+    "type": "Journal Article",
+    "doi": "10.1016/j.rset.2023.100049",
+    "doi_url": "https://doi.org/10.1016/j.rset.2023.100049",
+    "url": "https://www.sciencedirect.com/science/article/pii/S2667095X23000053"
+  },
+  {
+    "year": 2020,
+    "title": "Effects of Building Energy Efficiency Measures on Air Quality at the Neighborhood Level in Athens, Greece",
+    "authors": "Frilingou, N.; Bouris, D.",
+    "venue": "Energies",
+    "type": "Journal Article",
+    "doi": "10.3390/en13215689",
+    "doi_url": "https://doi.org/10.3390/en13215689",
+    "url": "https://www.mdpi.com/1996-1073/13/21/5689"
   }
 ]
